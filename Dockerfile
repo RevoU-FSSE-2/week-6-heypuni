@@ -18,6 +18,3 @@ EXPOSE 3001
 
 # Executing and start app.js
 CMD ["node", "app.js"]
-
-
-

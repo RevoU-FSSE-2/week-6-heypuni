@@ -27,6 +27,7 @@ If Docker is installed correctly, you should see the version number displayed in
 To verify that the image has been pulled successfully, you can use the following command to list all the images on your local machine:
 
 ``` docker images ```
+
 ![docker images](images/docker2.png)
 
 ## Dockertizing a Node.js Project without Installing Node on Your Machine
@@ -61,19 +62,22 @@ CMD ["node", "app.js"]
 2. Build the docker image
 Run the following command to build the Docker image:
 
-``` docker build . -t nodejs_app  ```
+``` docker build -t nodejs_app .  ```
+
 ![docker build](images/docker3.png)
 
 3. Run the Docker Container:
 
 After the image is built, you can run a container based on the image using the following command:
 
-``` docker run -d -p 3002:3000 nodejs_app ```
+``` docker run -d -p 3000:3001 nodejs_app ```
 
 The -d flag runs the container in detached mode (in the background). The -p flag maps port 3000 from the container to port 3000 on your host machine.
 
 4. Access Your Node.js Application:
 
-The Node.js application should now be running inside the Docker container. It can be accessed in your web browser by visiting http://localhost:3000.
+The Node.js application should now be running inside the Docker container. If successful, you should see you screen like this:
 
-![result](images/docker4.png)
+![result](images/)
+
+You should now be able to access it through your web browser by visiting http://localhost:3000
