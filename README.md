@@ -78,6 +78,6 @@ The -d flag runs the container in detached mode (in the background). The -p flag
 
 The Node.js application should now be running inside the Docker container. If successful, you should see you screen like this:
 
-![result](images/)
+![result](images/docker4.png)
 
 You should now be able to access it through your web browser by visiting http://localhost:3000
