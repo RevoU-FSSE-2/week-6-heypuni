@@ -1,0 +1,12 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Running a node.js file on docker",
+  "author": "Gabby Evalin",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
